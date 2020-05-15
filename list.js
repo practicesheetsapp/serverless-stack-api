@@ -7,7 +7,7 @@ export const main = handler(async (event, context) => {
         // 'KeyConditionExpression' defines the condition for the query
         // - 'userId = :userId' : only return items with matching 'userId'
         // partition key
-        // 'ExpressionAttributeValues' defines the value in the 
+        // 'ExpressionAttributeValues' defines the value in the
         // condition - ':userid:' defines 'userId' to be Identity Pool
         // identity id of the authenticated user
         KeyConditionExpression: "userId = :userId",
